@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>image-Carousel - Jquery Plugin</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+    <div class="top"><img src="logo.png" width="100px"> <p id="p1">Anna University Home Page</p>
+        <nav class="head1">  <ul><li class="sample"><a href="https://www.annauniv.edu/nwsnew/index.php">Home</a></li>
+   <li><a href="https://www.annauniv.edu/nwsnew/contactus.php">Contact</a></li>
+   <li><a href="https://www.annauniv.edu/sports/">Sports</a></li>
+   <li><a href="signup.html">SignUp/Register</a></li>
+   <li><a href="login.html">Login</a></li></ul></nav>
+   </div>
+    <div class="owl-carousel owl-theme">
+        <div class="slide slide-1">
+            <div class="slide-content">
+                <h1></h1>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <h1></h1>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <h1></h1>
+                <p></p>
+            </div>
+        </div>
+        <div class="slide slide-4">
+            <div class="slide-content">
+                <h1></h1>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                loop:true,
+                nav:true,
+                dots:true,
+                autoplay:true,
+                autoplaySpeed:500,
+                smartSpeed:1500,
+                autoplayHoverPause:true,
+            });
+        });
+    </script>
+    <div id="d1">
+        <img id="img1" src="anna8.jpeg">
+        <div id="d2"> 
+            <h1 class="h1">Welcome To Anna University</h1><br><br>
+             <p class="p1">Anna University was established on 4th September, 1978 as a unitary type of University. This University was named after Late Dr.C.N.Annadurai, former Chief Minister of Tamil Nadu. It offers higher education in Engineering, Technology, Architecture and Applied Sciences relevant to the current and projected needs of the society. Besides promoting research and disseminating knowledge gained therefrom, it fosters cooperation between the academic and industrial communities.The University was formed by bringing together and integrating four well known technical institutions in the city of Madras (now Chennai) namely</p>
+        <ul id="u1">
+            <li>College of Engineering (CEG) (Established in 1794)</li>
+            <li>Alagappa College of Technology (ACT) (Established in 1944)</li>
+            <li>Madras Institute of Technology (MIT) (Established in 1949)</li>
+            <li>School of Architecture & Planning (SAP) (Established in 1957)</li>
+        </ul>
+        </div>
+        <div id="d3">
+          <a href="https://youtu.be/PJ6wpAQhSdg"><img id="img2" src="youtube.png"></a>
+          <p id="p2">This is The Youtube link for Anna University Tour</p>
+          <button></button>
+        </div>
+    </div>
+    <div class="d4"></div>
+    <div id="d5">
+        <footer>
+            <div class="social-icons">
+                <a href="https://myaccount.google.com/accountlinking"><img class="google"src="index.png"></a>
+                <a href="www.instagram.com"><img class="insta"src="download.jpeg"></a>
+                <a href="www.facebook.com"><img class="facebook"src="images.png"></a>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

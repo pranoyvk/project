@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+         <script src="/plugins 2/jquery-validation-1.19.5 (1)/jquery.js"></script>
+      <script src="/plugins 2/jquery-validation-1.19.5 (1)/jquery.validate.js"></script> 
+      <script>
+         $(document).ready(function(){
+           $.validator.setDefaults({
+           submitHandler: function(){
+            let obj={
+                name:$("#name1").val(),
+                mail:$("#mail1").val(),
+                password:$("#psw1").val()
+            }
+            if(!localStorage.getItem($("#mail1").val())){
+                localStorage.setItem($("#mail1").val(),JSON.stringify(obj));
+               window.location.href="login.html"
+            }
+            else{
+                alert("account already exist")
+            }
+           
+        },
+        
+    });
+    $.validator.addMethod('mypassword', function(value, element) {
+        return this.optional(element) || (value.match(/[a-z]/) && value.match(/[0-9]/) && value.match(/[A-Z]/));
+    },
+    'Password should contain at least one numeric one Lowercase and one Uppercase.');
+    $("#frm1").validate({
+        rules:{
+            name1:"required",
+       
+        mail1:{
+            required:true,
+            email:true,
+           
+        },
+        psw1:{
+            required:true,
+            minlength:8,
+            mypassword:true,
+
+        },
+        cpsw:{
+             required:true,
+             equalTo:"#psw1"
+        }
+    },
+        messages:{
+            name1:"Please enter your name",
+            mail1:{
+                required:"please enter your email id",
+                email:"please enter valide email"
+
+            },
+            psw1:{
+                required:"please enter your password",
+                minlength:"password length must be 8"
+            },
+            cpsw:{
+                required:"please match your password",
+                equalTo:"password doesnt match"
+            }
+        },
+        
+    })
+});
+      </script>
+        <div class="top"><img src="logo.png" width="100px">
+             <nav class="head1">  <ul><li class="sample"><a href="https://www.annauniv.edu/nwsnew/index.php">Home</a></li>
+        <li><a href="https://www.annauniv.edu/nwsnew/contactus.php">contact</a></li>
+        <li><a href="https://www.annauniv.edu/sports/">Sports</a></li>
+        <li><a href="https://www.annauniv.edu/cai/">Affliation</a></li>
+        <li><a href="https://www.annauniv.edu/rcc/">Rcc</a></li>
+        <li><a href="https://admissions.annauniv.edu/cfa/">Admissions</a></li></ul></nav>
+        <h1 class="log"><b>Anna UniversityStudents Signup Portal</b></h1>
+       </div>
+        <div class="mydiv1">
+            <form id="frm1">
+            <label><strong>Username:</strong></label>
+            <input type="text" placeholder="enter your name" class="name1" id="name1" name="name1"><br><br>
+            <label><strong>Email Id:</strong></label>
+            <input type="email" placeholder="enter your email" class="mail1" id="mail1" name="mail1" title="Email should be in ro****@gmail.com in this format"><br><br>
+           <label><strong>Password:</strong></label>
+            <input type="password" id="psw1" name="psw1" placeholder="enter a password"><br><br>
+            <label><strong> confirm Password:</strong></label>
+            <input type="password" id="cpsw" name="cpsw" placeholder="confirm password"><br>
+            <button type="submit" class="btn">Register</button><br><br>
+            <p> By using this you can register</p><br>
+            <div class="social-icons">
+        <a href="www.google.com"><img class="google"src="index.png"></a>
+        <a href="www.instagram.com"><img class="insta"src="download.jpeg"></a>
+        <a href="www.facebook.com"><img class="facebook"src="images.png"></a>
+        </div>
+        </form>
+        </body>
+        </html>
+    

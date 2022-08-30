@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mydiv1{
+    width:500px;
+    height: 400px;
+    background-color:brown;
+    margin: 0 0 0 700px;
+    border: 2px solid black;
+}
+input[type=text],input[type=password]{
+    width: 480px;
+    margin: 8px 10px;
+    padding: 12px 20px;
+    display:inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    transition: .5s;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.mail{
+     width: 480px;
+    margin: 8px 10px;
+    padding: 12px 20px;
+    display:inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    transition: .5s;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.password{
+    width: 480px;
+    margin: 8px 10px;
+    padding: 12px 20px;
+    display:inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    transition: .5s;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.cfm password{
+    width: 480px;
+    margin: 8px 10px;
+    padding: 12px 20px;
+    display:inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    transition: .5s;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+label{
+    color: white;
+}
+.btn{
+    width: 480px;
+    margin: 8px 10px;
+    padding: 12px 20px;
+    display:inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    transition: .5s;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.head{
+    margin: 200px 0 0 850px;
+}
